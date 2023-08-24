@@ -1,0 +1,83 @@
+html {
+    height: 100vh;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+}
+
+.left {
+    display: flex;
+    flex-basis: 50%;
+}
+
+#backgroundimg {
+    width: 100%;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 60%;
+}
+
+.right > * {
+    padding-left: 6%;
+}
+.header {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer {
+    padding-top: 25px;
+}
+
+/* header and footer should always have the same color */
+.header, .footer {
+    background-color: rgb(244, 245, 247);
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 25px;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+}
+
+form > div > input {
+    width: 75%;
+}
+
+.form > p {
+    font-weight: bold;
+}
+
+.form {
+    box-shadow: 0px 10px 5px 0px #38558d;
+}
+
+
+button {
+    padding: 10px 25px 10px 25px;
+    background-color: #596d48;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+
+input {
+    border: 1px solid #E5E7EB;
+}
