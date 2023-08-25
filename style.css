@@ -1,48 +1,79 @@
-html {
-    height: 100vh;
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
 }
+
+/* html {
+    height: 100vh;
+} */
 
 body {
-    font-family: 'Ubuntu', sans-serif;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
 }
 
+
 .container {
+    box-sizing: border-box;
     display: flex;
+    justify-self: center;
+    align-content: center;
 }
 
 .left {
+    top: 0;
+    left: 0;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-basis: 50%;
+    background-image: url('bg.jpg');
+    background-size: cover;
 }
 
-#backgroundimg {
+
+.logobox {
+    letter-spacing: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.4);;
+    text-align: center;
     width: 100%;
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.logobox h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #55e7ff;
 }
 
 .right {
-    display: flex;
-    flex-direction: column;
     flex-basis: 60%;
+    color: #ff34b3;
 }
 
-.right > * {
+.right>* {
     padding-left: 6%;
 }
+
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 110%;
 }
 
 .footer {
     padding-top: 25px;
+    height: 100%;
+    font-size: 14px;
+    font-weight: 700;
 }
 
-/* header and footer should always have the same color */
-.header, .footer {
-    background-color: rgb(244, 245, 247);
+.footer a {
+    color: #4cc9f0;
 }
 
 form {
@@ -51,33 +82,46 @@ form {
     padding-bottom: 25px;
 }
 
-form > div {
+form>div {
     display: flex;
     flex-direction: column;
     flex-basis: 50%;
-}
-
-form > div > input {
-    width: 75%;
-}
-
-.form > p {
-    font-weight: bold;
-}
-
-.form {
-    box-shadow: 0px 10px 5px 0px #38558d;
-}
-
-
-button {
-    padding: 10px 25px 10px 25px;
-    background-color: #596d48;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
+    padding-bottom: 15px;
 }
 
 input {
-    border: 1px solid #E5E7EB;
+    background-color: #00ccfd;
+    outline-style: none;
+    width: 75%;
+    padding: 4px 6px;
+    margin: 4px 0;
+    border-radius: 5px;
+    border: 2px solid white;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input:required ~ label{
+    color: #ff34b3;
+}
+
+input:focus {
+    background-color: #ff34b3;
+}
+
+.flabel {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button {
+    padding: 15px 45px 15px 45px;
+    background-color: #ff34b3;
+    border-radius: 5px;
+    color: white;
+    border: 2px solid white;
+    font-family: 'Roboto Slab', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
 }
