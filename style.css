@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-/* html {
-    height: 100vh;
-} */
-
 body {
     display: flex;
     flex-direction: column;
@@ -19,17 +15,20 @@ body {
 .container {
     box-sizing: border-box;
     display: flex;
+    flex-wrap: wrap;
     justify-self: center;
     align-content: center;
 }
 
 .left {
+    flex: 1 1 0;
+    width: 0;
+    padding-left: 6%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 50%;
     background-image: url('bg.jpg');
     background-size: cover;
 }
@@ -37,7 +36,8 @@ body {
 
 .logobox {
     letter-spacing: 0.7rem;
-    background-color: rgba(0, 0, 0, 0.4);;
+    background-color: rgba(0, 0, 0, 0.4);
+    ;
     text-align: center;
     width: 100%;
     font-family: 'Roboto Slab', sans-serif;
@@ -50,8 +50,8 @@ body {
 }
 
 .right {
-    flex-basis: 60%;
     color: #ff34b3;
+    max-width: 750px;
 }
 
 .right>* {
@@ -102,7 +102,7 @@ input {
     font-weight: 600;
 }
 
-input:required ~ label{
+input:required~label {
     color: #ff34b3;
 }
 
