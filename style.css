@@ -23,7 +23,6 @@ body {
 .left {
     flex: 1 1 0;
     width: 0;
-    padding-left: 6%;
     top: 0;
     left: 0;
     display: flex;
@@ -31,6 +30,8 @@ body {
     align-items: center;
     background-image: url('bg.jpg');
     background-size: cover;
+    /* padding-left: 3%; */
+    padding: 0 3%;
 }
 
 
@@ -52,10 +53,10 @@ body {
 .right {
     color: #ff34b3;
     max-width: 750px;
+    padding: 0 3%;
 }
 
 .right>* {
-    padding-left: 6%;
 }
 
 .header {
